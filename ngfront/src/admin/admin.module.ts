@@ -4,6 +4,7 @@ import { RoomListComponent } from './components/room-list/room-list.component';
 import { RoomCreateComponent } from './components/room-create/room-create.component';
 import { RoomEditComponent } from './components/room-edit/room-edit.component';
 import { RoomDeleteComponent } from './components/room-delete/room-delete.component';
+import { AdminRoutingModule } from './admin-routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { RoomDeleteComponent } from './components/room-delete/room-delete.compon
     RoomDeleteComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AdminRoutingModule
   ]
 })
 export class AdminModule { }
