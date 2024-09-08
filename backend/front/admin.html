@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-mdb-theme="dark"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width, initial-scale=1" /> <title>Room Page</title> <link href="css/all.min.css"/> <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" /> <!-- MDB --> <link href="css/mdb.min.css" rel="stylesheet" /> <!-- my styles --> <link href="css/styles.css" rel="stylesheet" /> </head> <body>
+
+<style>
+        .scrollable-table {
+            max-height: 500px; /* Adjust the height as needed */
+            overflow-y: scroll;
+            max-width: 100%; /* Adjust the height as needed */
+            overflow-x: scroll;
+        }
+    </style>
+
+
+      <div class="container mt-5">
+        <div class="row">
+          <!-- room form -->
+          <form id="myForm">
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="title" class="form-label">Title</label>
+                  <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+                <div class="mb-3">
+                  <label for="image" class="form-label">Image</label>
+                  <input type="file" class="form-control" id="image" name="image" required>
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="description" class="form-label">Description</label>
+                  <textarea class="form-control" id="description" name="description" rows="5" required></textarea>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            <button type="submit" class="btn btn-primary">ADD</button>
+          </form>
+        </div>
+        
+
+        
+
+
+
+
+
+      <div class="row">
+        <div class="col-md-10">
+            <!-- rooms table -->
+            
+              <div class="scrollable-table">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                            <th scope="col">Image</th>
+                              <th scope="col">Title</th>
+                              <th scope="col">Code</th>
+                              <th scope="col">Status</th>
+                              <th scope="col">Description</th>
+                              <th scope="col">Actions</th>
+                          </tr>
+                      </thead>
+                      <tbody id="tableBody">
+                          <tr>
+                              <td>
+                                <img src="https://m.media-amazon.com/images/I/613K1SFVX9L._AC_SX425_.jpg" alt="room 1" width="60" height="60">
+                              </td>
+                              <td>room 1</td>
+                              <td>jhg3423</td>
+                              <td><span class="badge bg-danger mx-1"><i class="fa-solid fa-circle-check mx-1"></i>Done</span></td>
+                              <td>E-learning system for university</td>
+                              <td>
+                                  <a href="#" class="btn btn-sm btn-primary">Edit</a>
+                                  <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                                  <a href="#" class="btn btn-sm btn-info">View</a>
+                                  <a href="#" class="btn btn-sm btn-success">Activate</a>
+                                  <!-- <a href="#" class="btn btn-sm btn-warning">Disactive</a> -->
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          
+
+        </div>
+      
+        <div class="col-md-2">
+              <!-- search -->
+              <div class="row my-3">
+                <div class="input-group">
+                  <div class="form-outline" data-mdb-input-init>
+                    <input type="search" id="form1" class="form-control" />
+                    <label class="form-label" for="form1">Search</label>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-mdb-ripple-init>
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- filter -->
+              <div class="row my-3 text-center">
+                <div class="dropdown">
+                  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false" >Filter by Room Status </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Done</a></li>
+                    <li><a class="dropdown-item" href="#">Active</a></li>
+                  </ul>
+                </div>
+              </div>
+  
+        </div>
+      </div>
+
+
+
+
+    </div>
+    
+      
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js" ></script>
+  </body>
+</html>

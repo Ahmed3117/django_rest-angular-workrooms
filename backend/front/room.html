@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Room Page</title>
+    <link href="css/all.min.css" rel="stylesheet" />
+
+    <!-- MDB -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <!-- my styles -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container"> <!-- Pills navs --> 
+    <ul class="nav nav-pills nav-fill mb-3" id="ex1" role="tablist">
+        <li class="nav-item" role="presentation"> 
+            <a data-mdb-pill-init class="nav-link active " id="room-tab-1" href="#room-pills-1" role="tab" aria-controls="room-pills-1" aria-selected="true" >Members</a >
+        </li>
+        <li class="nav-item" role="presentation">
+            <a data-mdb-pill-init class="nav-link" id="room-tab-2" href="#room-pills-2" role="tab" aria-controls="room-pills-2" aria-selected="false" >Todo</a >
+        </li>
+        <li class="nav-item" role="presentation">
+            <a data-mdb-pill-init class="nav-link" id="room-tab-3" href="#room-pills-3" role="tab" aria-controls="room-pills-3" aria-selected="false" >Chat</a >
+        </li>
+    </ul>
+  <!-- Pills navs -->
+
+
+  <div class="tab-content" id="room-content" >
+    <div class="tab-pane fade show active " id="room-pills-1" role="tabpanel" aria-labelledby="room-tab-1">
+
+
+        <div class="card shadow-2-strong p-3 m-2">
+            <ul class="list-group list-group-light">
+                <li class="list-group-item"><span class="badge badge-primary">Admin</span> Ahmed Issa</li>
+                <li class="list-group-item">saad mohammed</li>
+                <li class="list-group-item">karim yaser</li>
+              </ul>
+        </div>
+
+        
+    </div>
+    <div class="tab-pane fade" id="room-pills-2" role="tabpanel" aria-labelledby="room-tab-2">
+    
+
+
+
+        <div class="card row d-flex justify-content-center align-items-center shadow-2-strong m-2" >
+        
+    
+            <div class="card">
+            <div class="card-body p-3">
+    
+                <form class="d-flex justify-content-center align-items-center mb-4">
+                <div data-mdb-input-init class="form-outline flex-fill">
+                    <input type="text" id="form2" class="form-control" />
+                    <label class="form-label" for="form2">New task...</label>
+                </div>
+                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-info ms-2">Add</button>
+                </form>
+    
+                <!-- Tabs navs -->
+                <ul class="nav nav-tabs mb-4 pb-2" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="ex1-tab-1" data-mdb-tab-init href="#ex1-tabs-1" role="tab"
+                    aria-controls="ex1-tabs-1" aria-selected="true">All</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="ex1-tab-2" data-mdb-tab-init href="#ex1-tabs-2" role="tab"
+                    aria-controls="ex1-tabs-2" aria-selected="false">Active</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="ex1-tab-3" data-mdb-tab-init href="#ex1-tabs-3" role="tab"
+                    aria-controls="ex1-tabs-3" aria-selected="false">Completed</a>
+                </li>
+                </ul>
+                <!-- Tabs navs -->
+    
+                <!-- Tabs content -->
+                <div class="tab-content" id="ex1-content">
+                <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
+                    aria-labelledby="ex1-tab-1">
+                    <ul class="list-group mb-0">
+                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                        <s>Cras justo odio</s>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                        <s>Dapibus ac facilisis in</s>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Morbi leo risus
+                    </li>
+                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Porta ac consectetur ac
+                    </li>
+                    <li class="list-group-item d-flex align-items-center border-0 mb-0 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Vestibulum at eros
+                    </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                    <ul class="list-group mb-0">
+                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Morbi leo risus
+                    </li>
+                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Porta ac consectetur ac
+                    </li>
+                    <li class="list-group-item d-flex align-items-center border-0 mb-0 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                        Vestibulum at eros
+                    </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+                    <ul class="list-group mb-0">
+                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                        <s>Cras justo odio</s>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                        style="background-color: #f4f6f7;">
+                        <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                        <s>Dapibus ac facilisis in</s>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+                <!-- Tabs content -->
+    
+            </div>
+            </div>
+    
+        
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="tab-pane fade" id="room-pills-3" role="tabpanel" aria-labelledby="room-tab-3">
+      
+
+
+
+
+
+
+
+        <div class="card overflow-auto shadow-2-strong" style="max-height: 500px;" id="chat1" >
+            <div class="card-body d-flex flex-column" style="height: 100%; overflow: auto;">
+              <!-- Chat content here -->
+
+
+
+              <div class="d-flex flex-row justify-content-start mb-4">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                  alt="avatar 1" style="width: 45px; height: 100%;">
+                <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                  <p class="small mb-0">Hello and thank you for visiting MDBootstrap. Please click the video
+                    below.</p>
+                </div>
+              </div>
+  
+              <div class="d-flex flex-row justify-content-end mb-4">
+                <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
+                  <p class="small mb-0">Thank you, I really like your product.</p>
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;">
+              </div>
+
+
+
+              <div class="row mt-auto" style="position: sticky; bottom: 0;">
+                <div class="col-9">
+                  <div data-mdb-input-init class="form-outline">
+                    <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                    <label class="form-label" for="textAreaExample">Type your message</label>
+                  </div>
+                </div>
+                <div class="col-3 d-flex align-items-end">
+                  <div data-mdb-input-init class="form-outline">
+                    <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-info btn-rounded">Send</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js" ></script>
+  </body>
+</html>
